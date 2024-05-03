@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+    <script defer src="scripts.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Minsky Salary Calculator</h1>
+      </header>
+      <section>
+        <h3>Employee tracking form</h3>
+        <form>
+          <input
+            placeholder="Employee first name"
+            type="text"
+            id = "emp-first-name"
+            required>
+          <input
+            placeholder="Employee last name"
+            type="text"
+            id="emp-last-name"
+            required>
+            <input
+            placeholder="Employee ID"
+            type="text"
+            id="emp-id"
+            required>
+            <input
+            placeholder="Job Title"
+            type="text"
+            id="emp-job-title"
+            required>
+            <input
+            placeholder="Annual Salary"
+            type="number"
+            id="emp-salary"
+            required>
+          <button onsubmit="addEmployeeData(event);" id="submit-btn">Submit</button>
+        </form>
+      </section>
+
+      <section>
+        <h3>Employee Information</h3>
+        <table id = "employee-table">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>ID</th>
+              <th>Job Title</th>
+              <th>Annual Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+</body>
+</html>
