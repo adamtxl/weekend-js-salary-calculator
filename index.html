@@ -13,33 +13,38 @@
       </header>
       <section>
         <h3>Employee tracking form</h3>
-        <form>
+        <form onsubmit="addEmployeeData(event)">
           <input
             placeholder="Employee first name"
             type="text"
             id = "emp-first-name"
+            value="Adam"
             required>
           <input
             placeholder="Employee last name"
             type="text"
             id="emp-last-name"
+            value="Troxell"
             required>
             <input
             placeholder="Employee ID"
             type="text"
             id="emp-id"
+            value="1337"
             required>
             <input
             placeholder="Job Title"
             type="text"
             id="emp-job-title"
+            value="Developer"
             required>
             <input
             placeholder="Annual Salary"
             type="number"
             id="emp-salary"
+            value="100000"
             required>
-          <button onsubmit="addEmployeeData(event);" id="submit-btn">Submit</button>
+          <button id="submit-btn">Submit</button>
         </form>
       </section>
 
@@ -53,6 +58,7 @@
               <th>ID</th>
               <th>Job Title</th>
               <th>Annual Salary</th>
+              <th>Remove</th>
             </tr>
           </thead>
           <tbody>
