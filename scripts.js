@@ -16,6 +16,7 @@ function addEmployeeData(event) {
 	let annualSalary = document.getElementById('emp-salary');
 	let employeeTable = document.getElementById('employee-table');
 	let monthlySalary = document.getElementById('monthly-salary');
+    let h3Right = document.getElementById('h3-right');
 	// console.log(`${firstName.value} ${lastName.value}`);
 	employeeTable.innerHTML += `
       <tr> 
@@ -38,7 +39,14 @@ function addEmployeeData(event) {
 		Title: jobTitle.value,
 		Salary: annualSalary.value,
 	});
-	console.log([employees]);
+    if (Number(monthlySalary.innerText) > 20000) {
+        // If true, set background-color to red
+        h3Right.style.backgroundColor = 'red';
+    } else {
+        // If false, remove any existing background-color
+        h3Right.style.backgroundColor = 'green';
+    }
+	// console.log([employees]);
 	// renderMonthlySalary()
 	firstName.value = '';
 	lastName.value = '';
@@ -48,11 +56,19 @@ function addEmployeeData(event) {
 }
 
 function removeEmployee(event) {
+    let h3Right = document.getElementById('h3-right');
 	//need to find the object that is being removed
 	let removedSalary = parseFloat(event.target.closest('TR').querySelector('td:nth-child(5)').textContent);
 	salaryCalc -= removedSalary;
 	let monthlySalary = document.getElementById('monthly-salary');
 	monthlySalary.innerText = Math.round(salaryCalc / 12);
+    if (Number(monthlySalary.innerText) > 20000) {
+        // If true, set background-color to red
+        h3Right.style.backgroundColor = 'red';
+    } else {
+        // If false, remove any existing background-color
+        h3Right.style.backgroundColor = 'green';
+    }
 	event.target.closest('TR').remove();
 }
 
