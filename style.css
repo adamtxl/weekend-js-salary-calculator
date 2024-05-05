@@ -26,7 +26,7 @@ input {
     background-color: #b7a5a5;
   }
   tr:nth-child(even){
-    background-color: #000000;
+    background-color: #a0c926;
   }
   th, td {
     padding: .5em;

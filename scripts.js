@@ -44,7 +44,7 @@ function addEmployeeData(event) {
         h3Right.style.backgroundColor = 'red';
     } else {
         // If false, remove any existing background-color
-        h3Right.style.backgroundColor = 'green';
+        h3Right.style.backgroundColor = '#a0c926';
     }
 	// console.log([employees]);
 	// renderMonthlySalary()
@@ -67,7 +67,7 @@ function removeEmployee(event) {
         h3Right.style.backgroundColor = 'red';
     } else {
         // If false, remove any existing background-color
-        h3Right.style.backgroundColor = 'green';
+        h3Right.style.backgroundColor = '#a0c926';
     }
 	event.target.closest('TR').remove();
 }
