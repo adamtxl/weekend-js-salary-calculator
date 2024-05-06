@@ -1,7 +1,7 @@
 input {
     padding: .5em;
     width: 150px;
-    background: #ab8989;
+    background: #934a4a;
     border: 1px solid;
   }
   button {
@@ -23,7 +23,7 @@ input {
     background-color: rgb(238, 198, 198);
   }
   tr:nth-child(odd){ 
-    background-color: #b7a5a5;
+    background-color: #af7878;
   }
   tr:nth-child(even){
     background-color: #a0c926;
@@ -34,7 +34,8 @@ input {
   }
   #h3-right {
     text-align: right;
+    background-color: #a0c926;
   }
   body {
-    background-image: url(https://previews.123rf.com/images/phadungsakphoto/phadungsakphoto1710/phadungsakphoto171000123/87226395-notebook-lined-paper-background-or-texture.jpg);
+    background-image: url(https://thumbs.dreamstime.com/z/happy-business-woman-money-rain-against-white-background-digital-composite-96239531.jpg?ct=jpeg);
   }

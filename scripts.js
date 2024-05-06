@@ -83,7 +83,7 @@ function removeEmployee(event) {
 // 1. Create a form to allow employee data to be input (done)
 // 2. Create a table to store employee data (done)
 // 2. Clear the form data after input (done)
-// 3. Grab the employee data that is entered (store as array of objects?)
+// 3. Grab the employee data that is entered (store as array of objects?) (done)
 // 4. store the employee data in a table (done)
 // 5. create a button when employee row is created to delete that row in the table (done)
 // 6. Calculate monthly cost of the employees (Annual salary / 12) (done)
